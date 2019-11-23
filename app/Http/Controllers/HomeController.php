@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Applicants;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('user.index');
+        $applicants = Applicants::paginate(5);
+        return view('home',compact('applicants'));
     }
 }

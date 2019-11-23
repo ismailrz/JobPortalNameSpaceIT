@@ -20,15 +20,9 @@
                         <td>Country : <i class="fa fa-map-marker fa-2x"> &nbsp;</i> {{$job->country}}</td>
                         <td> <i class="fa fa-calendar-check fa-2x"></i> Date : {{$job->created_at->diffForHumans()}}</td>
                         <td>
-                            @if(Auth:: check() && auth()->user()->userType == 'seeker')
                             <a href="{{Route('job.show',[$job->id])}}">
                                 <button class="btn btn-outline-success">Details</button>
                             </a>
-                            @else
-                                <a href="{{url('/login')}}">
-                                    <button class="btn btn-outline-success">Details</button>
-                                </a>
-                            @endif
                         </td>
                     </tr>
                 @endforeach

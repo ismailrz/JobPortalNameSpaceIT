@@ -61,6 +61,29 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+                                    @if(Auth::user()->userType == 'employer')
+                                        <a class="dropdown-item" href="{{ route('company.jobCreate') }}">
+                                            {{ __('Job Post') }}
+                                        </a>
+                                          <a class="dropdown-item" href="{{ route('company.applicants') }}">
+                                            {{ __('Job Applicants') }}
+                                        </a>
+
+                                    @endif
+
+                                    @if(Auth::user()->userType == 'seeker')
+                                        <a class="dropdown-item" href="{{ route('user.profile',[Auth::user()->id]) }}">
+                                            {{ __('Profile') }}
+                                        </a>
+                                         <a class="dropdown-item" href="{{ route('alljobs') }}">
+                                            {{ __('Jobs') }}
+                                        </a>
+
+                                    @endif
+
+
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

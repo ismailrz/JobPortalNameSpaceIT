@@ -14,11 +14,11 @@
                 @foreach($applicants as $applicant)
                     <tr>
                         <td>
-                            @if(empty($applicant->user->picture))
-                                <img src="{{asset('Images/profile.jpg')}}" alt="" width="100" height="100">
-                            @else
-                                <img src="{{asset('Images/')}}/{{$applicant->user->picture}}" alt="" width="100" height="100">
-                            @endif
+                        @if(empty($applicant->user->picture))
+                            <img src="{{asset('Images/profile.jpg')}}" alt="" width="100" height="100">
+                        @else
+                            <img src="{{asset('Images/')}}/{{$applicant->user->picture}}" alt="" width="100" height="100">
+                        @endif
                         </td>
                         <td>Title : {{$applicant->title}}</td>
                         <td>Applicant : {{$applicant->user->firstName}} {{$applicant->user->lastName}} </td>
