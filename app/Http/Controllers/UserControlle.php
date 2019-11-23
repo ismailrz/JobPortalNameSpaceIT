@@ -9,6 +9,10 @@ use Illuminate\Http\Request;
 
 class UserControlle extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('seeker',['except' => array('')]);
+    }
     public  function  profile($id){
         $rows = User::find($id);
         return view('user.profile',compact('rows'));

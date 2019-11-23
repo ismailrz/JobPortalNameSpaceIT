@@ -33,10 +33,16 @@
 
                         @if(Auth::check() && auth()->user()->userType == 'seeker')
                             @if(count($applyCheck) == 0)
-                                <form action="{{Route('job.apply',[$job->id])}}" method="post">
-                                    @csrf
-                                    <button class="btn btn-success btn-block" type="submit">Apply</button>
-                                </form>
+                                @if(!empty(auth()->user()->profile->resume))
+                                    <form action="{{Route('job.apply',[$job->id])}}" method="post">
+                                        @csrf
+                                        <button class="btn btn-success btn-block" type="submit">Apply</button>
+                                    </form>
+                                 @else
+                                    <a href="{{Route('user.profile',[auth()->user()->id])}}">
+                                        <button class="btn btn-success btn-block">Apply</button>
+                                    </a>
+                                 @endif
                             @else
                                 <button class="btn btn-outline-danger btn-block disabled" type="submit" >Already Applied</button>
                             @endif

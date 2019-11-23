@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Applicants;
+use App\CompanyJob;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -25,6 +26,7 @@ class HomeController extends Controller
     public function index()
     {
         $applicants = Applicants::paginate(5);
-        return view('home',compact('applicants'));
+        $jobs = CompanyJob::paginate(5);
+        return view('user.index',compact('applicants','jobs'));
     }
 }

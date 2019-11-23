@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Applicants;
 use App\CompanyJob;
+use App\UserProfile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 

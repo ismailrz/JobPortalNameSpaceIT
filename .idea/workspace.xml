@@ -2,33 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e3168a0-fee9-4750-ac70-3cc3fe43ecc6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/1574425636.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/1574425778.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/1574426334.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/1574429007.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/1574429246.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/1574432082.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Images/profile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/company/applicants.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/company/jobcreate.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/jobs/alljobs.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/jobs/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/user/profile.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/employer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/seeker.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Company.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/CompanyJob.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CompanyJob.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EmployerRegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployerRegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserControlle.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserControlle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/UserProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/UserProfile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/emp_register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/emp_register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/jobController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/jobController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/jobs/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/jobs/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -183,6 +166,7 @@
       <workItem from="1574310312634" duration="18911000" />
       <workItem from="1574395364484" duration="10905000" />
       <workItem from="1574425051670" duration="10552000" />
+      <workItem from="1574481493778" duration="3988000" />
     </task>
     <servers />
   </component>

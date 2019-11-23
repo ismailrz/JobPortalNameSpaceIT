@@ -34,5 +34,5 @@ Route::get('/company/applicants','CompanyController@applicants')->name('company.
 Route::post('/company/jobStore','CompanyController@jobstore')->name('company.jobStore');
 
 //Employer Register Routes
-Route::view('employer/profile','auth.emp_register')->name('employer.register');
+Route::view('employer/register','auth.emp_register')->name('employer.register');
 Route::post('employer/store','EmployerRegisterController@store')->name('employer.store');

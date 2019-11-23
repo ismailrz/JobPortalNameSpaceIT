@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Auth;
 
 class CompanyController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('employer',['except' => array('')]);
+    }
+
     public function jobCreate(){
         return view('company.jobcreate');
     }
